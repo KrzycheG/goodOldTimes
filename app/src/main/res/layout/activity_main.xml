@@ -7,6 +7,20 @@
     android:background="@drawable/w3"
     tools:context=".MainActivity">
 
+    <EditText
+        android:hint="Type Sequence"
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="221dp"
+        android:layout_height="53dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
     <LinearLayout
         android:layout_width="218dp"
         android:layout_height="298dp"
@@ -65,6 +79,42 @@
             android:background="@drawable/colour"
             android:onClick="sound"
             android:text="Acolyte" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="sequence"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Save"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Read"
+            android:text="LOAD" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
